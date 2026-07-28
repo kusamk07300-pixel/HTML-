@@ -3,11 +3,11 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace "net.babycat.live"
-    compileSdk 36
+    compileSdk 35
     defaultConfig {
         applicationId "net.babycat.live"
         minSdk 21
-        targetSdk 36
+        targetSdk 35
         versionCode 4
         versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -37,6 +37,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 
     packagingOptions {
@@ -94,38 +95,17 @@ dependencies {
     implementation 'androidx.media3:media3-common:1.1.1'
     implementation 'androidx.media3:media3-datasource-okhttp:1.1.1'
 
-    // Smart Refresh Layout
-    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.5'
-    implementation 'com.scwang.smart:refresh-header-classics:2.0.5'
-    implementation 'com.scwang.smart:refresh-footer-classics:2.0.5'
-
-    // LitePal Database
-    implementation 'org.litepal.guolindev:core:3.2.3'
+    // Smart Refresh Layout (Maven Central version)
+    implementation 'io.github.scwang90:refresh-layout-kernel:2.0.6'
+    implementation 'io.github.scwang90:refresh-header-classics:2.0.6'
+    implementation 'io.github.scwang90:refresh-footer-classics:2.0.6'
 
     // SVGA Player
     implementation 'com.github.yyued:SVGAPlayer-Android:2.4.3'
 
-    // Photo Picker
-    implementation 'io.github.lucksiege:picture-selector:v2.6.1'
-    implementation 'io.github.lucksiege:compress:v3.3.2'
-    implementation 'io.github.lucksiege:ucrop:v2.2.4'
-
-    // Auto Size
-    implementation 'me.jessyan:autosize:1.2.1'
-
-    // ImmersionBar
-    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
-    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
-
-    // Tencent TUikit (IM SDK)
-    implementation 'com.github.tencentcloudbase/tuikit:im:4.3.0'
-    implementation 'com.github.tencentcloudbase/tuikit:conversation:4.3.0'
-    implementation 'com.github.tencentcloudbase/tuikit:contact:4.3.0'
-    implementation 'com.github.tencentcloudbase/tuikit:chat:4.3.0'
-    implementation 'com.github.tencentcloudbase/tuikit:group:4.3.0'
-
-    // Tencent TRTC
-    implementation 'com.tencent.rtmp:tuicallengine:4.3.0'
+    // ImmersionBar (Maven Central version)
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar-components:3.2.2'
 
     // Google Play Services
     implementation 'com.google.android.gms:play-services-auth:20.7.0'
@@ -141,24 +121,8 @@ dependencies {
     // Loading & UI Utils
     implementation 'com.blankj:utilcodex:1.31.1'
 
-    // XPopup
-    implementation 'com.github.li-xiaojiong:XPopup:2.9.0'
-
-    // QRCode
-    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.7'
-    implementation 'cn.bingoogolapple:bga-zxing:1.1.7'
-
     // Circle ImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
-    // PhotoView
-    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
-
-    // Network Monitor
-    implementation 'com.github.anggrayudi:network:1.1.2'
-
-    // LiveKit
-    implementation 'io.livekit:livekit-client:2.0.0'
 
     // Jetpack Security
     implementation 'androidx.security:security-crypto:1.1.0-alpha06'

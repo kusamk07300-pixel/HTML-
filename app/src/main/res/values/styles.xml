@@ -29,5 +29,5 @@
 
     <style name="ChatTransparentPopActivityStyle" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
 
-    <style name="Base.Theme.NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+    <!-- Base.Theme.NoActionBar and Picture.Theme.Translucent removed (PictureSelector not available) -->
 </resources>

@@ -570,40 +570,7 @@
             </intent-filter>
         </service>
 
-        <provider
-            android:name="com.luck.picture.lib.basic.PictureFileProvider"
-            android:exported="false"
-            android:authorities="net.babycat.live.luckProvider"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/ps_file_paths"/>
-        </provider>
-
-        <service
-            android:name="com.luck.picture.lib.service.ForegroundService"
-            android:enabled="true"
-            android:foregroundServiceType="location"/>
-
-        <activity
-            android:theme="@style/Base.Theme.NoActionBar"
-            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
-            android:configChanges="screenSize|orientation|keyboardHidden"/>
-        <activity
-            android:theme="@style/Picture.Theme.Translucent"
-            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
-            android:configChanges="screenSize|orientation|keyboardHidden"/>
-
-        <activity
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="screenSize|orientation|keyboardHidden"/>
-        <activity
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:name="com.yalantis.ucrop.UCropMultipleActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="screenSize|orientation|keyboardHidden"/>
+<!-- removed: PictureSelector, UCrop (not available from Maven Central) -->
 
         <activity
             android:theme="@style/ActivityTranslucent"
@@ -617,9 +584,7 @@
             android:configChanges="screenSize|orientation|keyboardHidden"
             android:windowSoftInputMode="stateAlwaysHidden"/>
 
-        <activity
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:name="com.lxj.xpopup.util.XPermission.PermissionActivity"/>
+<!-- removed: XPopup (JitPack only, not available in this environment) -->
 
         <meta-data
             android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
@@ -704,28 +669,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- AutoSize -->
-        <provider
-            android:name="me.jessyan.autosize.InitProvider"
-            android:exported="false"
-            android:multiprocess="true"
-            android:authorities="net.babycat.live.autosize-init-provider"/>
-
-        <!-- Tencent LiteAV -->
-        <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name="com.tencent.liteav.audio2.permission.PermissionActivity"
-            android:configChanges="screenSize|orientation|keyboardHidden"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-
-        <uses-library android:name="libOpenCL.so" android:required="false"/>
-
-        <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name="com.tencent.rtmp.video.TXScreenCapture.TXScreenCaptureAssistantActivity"/>
-        <service
-            android:name="com.tencent.rtmp.video.ScreenCaptureService"
-            android:exported="false"
-            android:foregroundServiceType="mediaProjection"/>
+<!-- removed: AutoSize, Tencent LiteAV/TRTC (not available from Maven Central) -->
     </application>
 </manifest>
