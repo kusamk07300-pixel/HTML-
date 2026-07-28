@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:background="@mipmap/iv_barrage_bj"
+    android:padding="8mm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4mm"
+    android:layout_marginBottom="4mm">
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tvBarrageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10mm"
+        android:text="test"
+        android:layout_marginStart="5mm"
+        android:layout_toEndOf="@+id/imgBarrageHead"/>
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:ellipsize="end"
+        android:id="@+id/tvBarrageMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10mm"
+        android:text="sssssss"
+        android:layout_below="@+id/tvBarrageName"
+        android:layout_marginStart="5mm"
+        android:layout_marginEnd="20mm"
+        android:layout_toEndOf="@+id/imgBarrageHead"/>
+    <ImageView
+        android:id="@+id/imgBarrageHead"
+        android:layout_width="64mm"
+        android:layout_height="64mm"
+        android:layout_marginTop="5mm"
+        android:layout_marginBottom="5mm"
+        android:src="@mipmap/home_my"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10mm"/>
+</RelativeLayout>

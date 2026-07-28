@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:background="@mipmap/image_pay_bj"
+    android:layout_width="match_parent"
+    android:layout_height="120mm"
+    android:layout_marginBottom="24mm">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/hint_color"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0钻石"/>
+        <TextView
+            android:textSize="12dp"
+            android:textColor="@color/hint_color"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15mm"
+            android:text="￥0"/>
+    </LinearLayout>
+</RelativeLayout>

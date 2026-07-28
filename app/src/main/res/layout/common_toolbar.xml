@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <net.babycat.live.platform.widget.view.Topbar
+        android:id="@+id/common_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="88mm"
+        app:leftImage="@mipmap/icon_back"
+        app:titleTextColor="@color/black"
+        app:titleTextSize="18dp"/>
+</LinearLayout>

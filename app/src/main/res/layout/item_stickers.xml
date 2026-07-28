@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/re_bj"
+    android:background="@mipmap/iv_stickers_bj"
+    android:layout_width="160mm"
+    android:layout_height="160mm"
+    android:layout_marginBottom="40mm">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="144mm"
+        android:layout_height="144mm"
+        android:src="@mipmap/iv_cancel_wearing"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/iv_selection"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/iv_sticker_selection_box"/>
+    <View
+        android:id="@+id/view_vip"
+        android:background="@mipmap/iv_vip_stickers"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/lin_bj"
+    android:background="@drawable/bg_country_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="44mm"
+    android:layout_marginEnd="20mm">
+    <ImageView
+        android:id="@+id/flag_imv"
+        android:layout_width="36mm"
+        android:layout_height="24mm"
+        android:src="@drawable/flag_china"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="10mm"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#ff333333"
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginStart="10mm"
+        android:layout_marginEnd="10mm"/>
+</LinearLayout>

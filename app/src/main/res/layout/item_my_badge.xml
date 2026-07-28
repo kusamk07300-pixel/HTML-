@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="50mm"
+        android:layout_height="50mm"
+        android:layout_marginEnd="10mm">
+        <ImageView
+            android:id="@+id/iv_medal_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/emty_medal"/>
+        <com.yy.yyeva.view.EvaAnimViewV3
+            android:id="@+id/eva_medal_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

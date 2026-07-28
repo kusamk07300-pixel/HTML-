@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/iv_fighter_launching_bj"
+    android:layout_width="match_parent"
+    android:layout_height="1140mm">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="80mm"
+        android:layout_height="80mm"
+        android:src="@mipmap/iv_fighter_launching_close"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72mm"
+        android:text="Fighter launching"
+        android:layout_centerHorizontal="true"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20mm"
+        android:layout_below="@+id/tv_title">
+        <TextView
+            android:textSize="13dp"
+            android:textColor="#ffffffff"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72mm"
+            android:layout_marginStart="72mm"
+            android:layout_marginEnd="72mm"/>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

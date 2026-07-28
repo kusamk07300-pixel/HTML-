@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="@dimen/home_space"
+        android:paddingRight="@dimen/home_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32mm"
+        android:layout_marginBottom="20mm">
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/shop_magic_indicator"
+            android:background="@drawable/bg_white_r40"
+            android:paddingLeft="16mm"
+            android:paddingRight="16mm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <net.babycat.live.platform.widget.view.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </net.babycat.live.platform.widget.view.NestedScrollableHost>
+</LinearLayout>

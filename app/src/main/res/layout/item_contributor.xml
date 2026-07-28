@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="6mm"
+    android:paddingEnd="6mm">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_avatar"
+        android:layout_width="48mm"
+        android:layout_height="48mm"
+        android:scaleType="centerCrop"
+        app:civ_border_width="2mm"/>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="52mm"
+    android:layout_height="52mm"
+    android:layout_marginRight="4mm">
+    <ImageView
+        android:id="@+id/imgs_avatar"
+        android:layout_width="48mm"
+        android:layout_height="48mm"
+        android:layout_marginTop="3mm"
+        android:src="@mipmap/circle_logo"
+        android:layout_marginStart="3mm"/>
+    <ImageView
+        android:id="@+id/huangguan_ic"
+        android:layout_width="18mm"
+        android:layout_height="18mm"
+        android:src="@mipmap/huangguan_top1"/>
+</RelativeLayout>

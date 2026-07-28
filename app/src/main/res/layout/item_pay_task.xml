@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40mm">
+    <RelativeLayout
+        android:background="@mipmap/iv_item_recharge_bj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40mm">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80mm"
+            android:layout_marginBottom="40mm"
+            android:layout_marginStart="53mm"
+            android:layout_marginEnd="20mm"/>
+    </RelativeLayout>
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#ff654412"
+        android:gravity="center"
+        android:id="@+id/tv_amount"
+        android:background="@mipmap/iv_item_recharge_top"
+        android:layout_width="340mm"
+        android:layout_height="80mm"
+        android:text="1M"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

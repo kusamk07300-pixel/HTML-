@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="12dp"
+    android:textColor="@color/white"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:id="@+id/tv_manage"
+    android:background="@drawable/bg_manage_tag"
+    android:paddingLeft="10mm"
+    android:paddingRight="10mm"
+    android:layout_width="160mm"
+    android:layout_height="44mm"
+    android:layout_marginRight="15mm"
+    android:layout_marginBottom="20mm"
+    android:text="CAT·欣悦诚聘"
+    android:maxLines="1"/>
