@@ -151,4 +151,14 @@
     <dimen name="x88">88dp</dimen>
     <dimen name="x98">98dp</dimen>
     <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="google_1x">8dp</dimen>
+    <dimen name="fixed_width_padding">4dp</dimen>
+    <dimen name="fixed_height">56dp</dimen>
+    <dimen name="fixed_height_bottom_padding">4dp</dimen>
+    <dimen name="fixed_height_top_padding_inactive">8dp</dimen>
+    <dimen name="fixed_icon_badge_grid_width">28dp</dimen>
+    <dimen name="fixed_icon_badge_grid_height">28dp</dimen>
+    <dimen name="fixed_icon_grid">24dp</dimen>
+    <dimen name="fixed_label_active">12sp</dimen>
+    <dimen name="fixed_label_active_to_inactive_ratio">0.85</dimen>
 </resources>
