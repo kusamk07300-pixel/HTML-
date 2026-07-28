@@ -15,5 +15,17 @@
     <color name="dsb_track_color">#E0E0E0</color>
     <color name="dsb_ripple_color_focused">#40008577</color>
     <color name="dsb_ripple_color_pressed">#80008577</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="text_positive">#4CAF50</color>
+    <color name="text_positive_hover">#388E3C</color>
+    <color name="theme_color">#008577</color>
+    <color name="sub_theme_color">#00574B</color>
+    <color name="ucrop_color_active_aspect_ratio">#FF0000</color>
+    <color name="ucrop_color_inactive_aspect_ratio">#CCCCCC</color>
+    <color name="ayp_item_selected">#008577</color>
+    <color name="ayp_drop_shadow">#4D000000</color>
 </resources>
 
