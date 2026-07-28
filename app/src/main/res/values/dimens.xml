@@ -150,4 +150,5 @@
     <dimen name="x528">528dp</dimen>
     <dimen name="x88">88dp</dimen>
     <dimen name="x98">98dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
 </resources>
