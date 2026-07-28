@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="58dp">
+    <com.tencent.qcloud.tuikit.timcommon.component.gatherimage.ShadeImageView
+        android:layout_gravity="center"
+        android:id="@+id/group_manager_face"
+        android:layout_width="38.4dp"
+        android:layout_height="38.4dp"
+        android:layout_marginStart="15.36dp"
+        android:layout_marginEnd="11.52dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="17.28sp"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center"
+            android:id="@+id/group_manage_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"/>
+        <View
+            android:id="@+id/view_line"
+            android:background="#d9d9d9"
+            android:layout_width="match_parent"
+            android:layout_height="0.55dp"/>
+    </LinearLayout>
+</LinearLayout>

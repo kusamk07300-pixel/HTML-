@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_toolbar"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_white_r12"
+        android:paddingLeft="@dimen/home_space"
+        android:paddingRight="@dimen/home_space"
+        android:layout_width="match_parent"
+        android:layout_height="140mm"
+        android:layout_marginTop="20mm">
+        <EditText
+            android:textSize="16dp"
+            android:textColor="@color/base_text_color"
+            android:textColorHint="@color/second_text_color"
+            android:id="@+id/et_nickname"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="@string/please_nickname"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/my_cursor"/>
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="32mm"
+            android:layout_height="32mm"
+            android:layout_marginLeft="28mm"
+            android:src="@mipmap/my_delete"/>
+    </LinearLayout>
+</LinearLayout>

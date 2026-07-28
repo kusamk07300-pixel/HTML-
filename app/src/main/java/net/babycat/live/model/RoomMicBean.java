@@ -1,0 +1,351 @@
+package net.babycat.live.model;
+
+import com.google.gson.annotations.SerializedName;
+import g0.o0;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class RoomMicBean {
+
+    @SerializedName("code")
+    private Integer code;
+
+    @SerializedName("data")
+    private DataDTO data;
+
+    @SerializedName(o0.CATEGORY_MESSAGE)
+    private String msg;
+
+    @SerializedName("time")
+    private Integer time;
+
+    public static class DataDTO {
+
+        @SerializedName("list")
+        private List<ListDTO> list;
+
+        public static class ListDTO {
+
+            @SerializedName("avatar")
+            private String avatar;
+
+            @SerializedName("avatar_frame")
+            private String avatarFrame;
+
+            @SerializedName("in_gift_count_on_mic")
+            private Integer inGiftCountOnMic;
+
+            @SerializedName("is_master")
+            private Integer isMaster;
+
+            @SerializedName("is_no_mic")
+            private Integer isNoMic;
+
+            @SerializedName("mic_num")
+            private Integer micNum;
+
+            @SerializedName("nickname")
+            private String nickname;
+
+            @SerializedName("price")
+            private Integer price;
+
+            @SerializedName("sex")
+            private Integer sex;
+
+            @SerializedName("user_id")
+            private Integer userId;
+
+            public boolean canEqual(Object obj) {
+                return obj instanceof ListDTO;
+            }
+
+            public boolean equals(Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof ListDTO)) {
+                    return false;
+                }
+                ListDTO listDTO = (ListDTO) obj;
+                if (!listDTO.canEqual(this)) {
+                    return false;
+                }
+                Integer userId = getUserId();
+                Integer userId2 = listDTO.getUserId();
+                if (userId != null ? !userId.equals(userId2) : userId2 != null) {
+                    return false;
+                }
+                Integer sex = getSex();
+                Integer sex2 = listDTO.getSex();
+                if (sex != null ? !sex.equals(sex2) : sex2 != null) {
+                    return false;
+                }
+                Integer isMaster = getIsMaster();
+                Integer isMaster2 = listDTO.getIsMaster();
+                if (isMaster != null ? !isMaster.equals(isMaster2) : isMaster2 != null) {
+                    return false;
+                }
+                Integer isNoMic = getIsNoMic();
+                Integer isNoMic2 = listDTO.getIsNoMic();
+                if (isNoMic != null ? !isNoMic.equals(isNoMic2) : isNoMic2 != null) {
+                    return false;
+                }
+                Integer micNum = getMicNum();
+                Integer micNum2 = listDTO.getMicNum();
+                if (micNum != null ? !micNum.equals(micNum2) : micNum2 != null) {
+                    return false;
+                }
+                Integer inGiftCountOnMic = getInGiftCountOnMic();
+                Integer inGiftCountOnMic2 = listDTO.getInGiftCountOnMic();
+                if (inGiftCountOnMic != null ? !inGiftCountOnMic.equals(inGiftCountOnMic2) : inGiftCountOnMic2 != null) {
+                    return false;
+                }
+                Integer price = getPrice();
+                Integer price2 = listDTO.getPrice();
+                if (price != null ? !price.equals(price2) : price2 != null) {
+                    return false;
+                }
+                String nickname = getNickname();
+                String nickname2 = listDTO.getNickname();
+                if (nickname != null ? !nickname.equals(nickname2) : nickname2 != null) {
+                    return false;
+                }
+                String avatar = getAvatar();
+                String avatar2 = listDTO.getAvatar();
+                if (avatar != null ? !avatar.equals(avatar2) : avatar2 != null) {
+                    return false;
+                }
+                String avatarFrame = getAvatarFrame();
+                String avatarFrame2 = listDTO.getAvatarFrame();
+                return avatarFrame != null ? avatarFrame.equals(avatarFrame2) : avatarFrame2 == null;
+            }
+
+            public String getAvatar() {
+                return this.avatar;
+            }
+
+            public String getAvatarFrame() {
+                return this.avatarFrame;
+            }
+
+            public Integer getInGiftCountOnMic() {
+                return this.inGiftCountOnMic;
+            }
+
+            public Integer getIsMaster() {
+                return this.isMaster;
+            }
+
+            public Integer getIsNoMic() {
+                return this.isNoMic;
+            }
+
+            public Integer getMicNum() {
+                return this.micNum;
+            }
+
+            public String getNickname() {
+                return this.nickname;
+            }
+
+            public Integer getPrice() {
+                return this.price;
+            }
+
+            public Integer getSex() {
+                return this.sex;
+            }
+
+            public Integer getUserId() {
+                return this.userId;
+            }
+
+            public int hashCode() {
+                Integer userId = getUserId();
+                int iHashCode = userId == null ? 43 : userId.hashCode();
+                Integer sex = getSex();
+                int iHashCode2 = ((iHashCode + 59) * 59) + (sex == null ? 43 : sex.hashCode());
+                Integer isMaster = getIsMaster();
+                int iHashCode3 = (iHashCode2 * 59) + (isMaster == null ? 43 : isMaster.hashCode());
+                Integer isNoMic = getIsNoMic();
+                int iHashCode4 = (iHashCode3 * 59) + (isNoMic == null ? 43 : isNoMic.hashCode());
+                Integer micNum = getMicNum();
+                int iHashCode5 = (iHashCode4 * 59) + (micNum == null ? 43 : micNum.hashCode());
+                Integer inGiftCountOnMic = getInGiftCountOnMic();
+                int iHashCode6 = (iHashCode5 * 59) + (inGiftCountOnMic == null ? 43 : inGiftCountOnMic.hashCode());
+                Integer price = getPrice();
+                int iHashCode7 = (iHashCode6 * 59) + (price == null ? 43 : price.hashCode());
+                String nickname = getNickname();
+                int iHashCode8 = (iHashCode7 * 59) + (nickname == null ? 43 : nickname.hashCode());
+                String avatar = getAvatar();
+                int iHashCode9 = (iHashCode8 * 59) + (avatar == null ? 43 : avatar.hashCode());
+                String avatarFrame = getAvatarFrame();
+                return (iHashCode9 * 59) + (avatarFrame != null ? avatarFrame.hashCode() : 43);
+            }
+
+            public void setAvatar(String str) {
+                this.avatar = str;
+            }
+
+            public void setAvatarFrame(String str) {
+                this.avatarFrame = str;
+            }
+
+            public void setInGiftCountOnMic(Integer num) {
+                this.inGiftCountOnMic = num;
+            }
+
+            public void setIsMaster(Integer num) {
+                this.isMaster = num;
+            }
+
+            public void setIsNoMic(Integer num) {
+                this.isNoMic = num;
+            }
+
+            public void setMicNum(Integer num) {
+                this.micNum = num;
+            }
+
+            public void setNickname(String str) {
+                this.nickname = str;
+            }
+
+            public void setPrice(Integer num) {
+                this.price = num;
+            }
+
+            public void setSex(Integer num) {
+                this.sex = num;
+            }
+
+            public void setUserId(Integer num) {
+                this.userId = num;
+            }
+
+            public String toString() {
+                return "RoomMicBean.DataDTO.ListDTO(userId=" + getUserId() + ", nickname=" + getNickname() + ", sex=" + getSex() + ", avatar=" + getAvatar() + ", avatarFrame=" + getAvatarFrame() + ", isMaster=" + getIsMaster() + ", isNoMic=" + getIsNoMic() + ", micNum=" + getMicNum() + ", inGiftCountOnMic=" + getInGiftCountOnMic() + ", price=" + getPrice() + ")";
+            }
+        }
+
+        public boolean canEqual(Object obj) {
+            return obj instanceof DataDTO;
+        }
+
+        public boolean equals(Object obj) {
+            if (obj == this) {
+                return true;
+            }
+            if (!(obj instanceof DataDTO)) {
+                return false;
+            }
+            DataDTO dataDTO = (DataDTO) obj;
+            if (!dataDTO.canEqual(this)) {
+                return false;
+            }
+            List<ListDTO> list = getList();
+            List<ListDTO> list2 = dataDTO.getList();
+            return list != null ? list.equals(list2) : list2 == null;
+        }
+
+        public List<ListDTO> getList() {
+            return this.list;
+        }
+
+        public int hashCode() {
+            List<ListDTO> list = getList();
+            return 59 + (list == null ? 43 : list.hashCode());
+        }
+
+        public void setList(List<ListDTO> list) {
+            this.list = list;
+        }
+
+        public String toString() {
+            return "RoomMicBean.DataDTO(list=" + getList() + ")";
+        }
+    }
+
+    public boolean canEqual(Object obj) {
+        return obj instanceof RoomMicBean;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof RoomMicBean)) {
+            return false;
+        }
+        RoomMicBean roomMicBean = (RoomMicBean) obj;
+        if (!roomMicBean.canEqual(this)) {
+            return false;
+        }
+        Integer code = getCode();
+        Integer code2 = roomMicBean.getCode();
+        if (code != null ? !code.equals(code2) : code2 != null) {
+            return false;
+        }
+        Integer time = getTime();
+        Integer time2 = roomMicBean.getTime();
+        if (time != null ? !time.equals(time2) : time2 != null) {
+            return false;
+        }
+        String msg = getMsg();
+        String msg2 = roomMicBean.getMsg();
+        if (msg != null ? !msg.equals(msg2) : msg2 != null) {
+            return false;
+        }
+        DataDTO data = getData();
+        DataDTO data2 = roomMicBean.getData();
+        return data != null ? data.equals(data2) : data2 == null;
+    }
+
+    public Integer getCode() {
+        return this.code;
+    }
+
+    public DataDTO getData() {
+        return this.data;
+    }
+
+    public String getMsg() {
+        return this.msg;
+    }
+
+    public Integer getTime() {
+        return this.time;
+    }
+
+    public int hashCode() {
+        Integer code = getCode();
+        int iHashCode = code == null ? 43 : code.hashCode();
+        Integer time = getTime();
+        int iHashCode2 = ((iHashCode + 59) * 59) + (time == null ? 43 : time.hashCode());
+        String msg = getMsg();
+        int iHashCode3 = (iHashCode2 * 59) + (msg == null ? 43 : msg.hashCode());
+        DataDTO data = getData();
+        return (iHashCode3 * 59) + (data != null ? data.hashCode() : 43);
+    }
+
+    public void setCode(Integer num) {
+        this.code = num;
+    }
+
+    public void setData(DataDTO dataDTO) {
+        this.data = dataDTO;
+    }
+
+    public void setMsg(String str) {
+        this.msg = str;
+    }
+
+    public void setTime(Integer num) {
+        this.time = num;
+    }
+
+    public String toString() {
+        return "RoomMicBean(msg=" + getMsg() + ", code=" + getCode() + ", time=" + getTime() + ", data=" + getData() + ")";
+    }
+}

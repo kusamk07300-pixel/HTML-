@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_glory_bj"
+    android:layout_width="160mm"
+    android:layout_height="160mm"
+    android:layout_marginTop="20mm">
+    <ImageView
+        android:id="@+id/image_badge"
+        android:layout_width="120mm"
+        android:layout_height="120mm"
+        android:layout_marginTop="20mm"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <com.yy.yyeva.view.EvaAnimViewV3
+        android:id="@+id/eva_playerView"
+        android:layout_width="120mm"
+        android:layout_height="120mm"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

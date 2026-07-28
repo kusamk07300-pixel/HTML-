@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@mipmap/iv_reward_item_bj"
+    android:layout_width="120mm"
+    android:layout_height="158mm"
+    android:layout_marginEnd="20mm">
+    <ImageView
+        android:id="@+id/iv_reward"
+        android:layout_width="80mm"
+        android:layout_height="80mm"
+        android:layout_marginTop="20mm"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20mm"
+        android:text="x 1 Day"
+        android:layout_marginStart="5mm"
+        android:layout_marginEnd="5mm"/>
+</LinearLayout>

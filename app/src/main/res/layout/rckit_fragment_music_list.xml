@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.rongcloud.corekit.widget.RecyclerViewAtVP2
+            android:orientation="vertical"
+            android:id="@+id/rv_music_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_empty"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rckit_text_music_empty"
+            android:alpha="0.4"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/tv_add_music"
+            android:background="@drawable/rckit_bg_add_music"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/rckit_text_add_music"/>
+    </LinearLayout>
+</FrameLayout>

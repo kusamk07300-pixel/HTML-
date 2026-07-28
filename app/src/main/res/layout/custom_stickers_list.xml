@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#090909"
+    android:layout_width="match_parent"
+    android:layout_height="650mm">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="80mm"
+        android:text="@string/stickers"
+        android:layout_marginStart="20mm"/>
+    <View
+        android:background="@color/white_16"
+        android:layout_width="match_parent"
+        android:layout_height="1mm"/>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/normal_view"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:srlDisableContentWhenLoading="true"
+        app:srlDisableContentWhenRefresh="true">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stickers_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40mm"
+            android:layout_marginStart="20mm"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

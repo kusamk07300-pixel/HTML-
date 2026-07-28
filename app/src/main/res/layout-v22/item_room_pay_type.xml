@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_item"
+    android:background="@drawable/room_boder_paytype_normal"
+    android:layout_width="match_parent"
+    android:layout_height="102mm"
+    android:layout_marginBottom="23mm"
+    android:paddingStart="32mm"
+    android:paddingEnd="32mm"
+    android:layout_marginStart="27mm"
+    android:layout_marginEnd="27mm">
+    <ImageView
+        android:id="@+id/iv_pay"
+        android:layout_width="40mm"
+        android:layout_height="40mm"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24mm"
+        android:text="微信支付"
+        android:layout_weight="1"
+        android:textFontWeight="600"/>
+    <ImageView
+        android:id="@+id/iv_choose"
+        android:layout_width="32mm"
+        android:layout_height="32mm"
+        android:src="@mipmap/room_pay_type_normal"/>
+</LinearLayout>

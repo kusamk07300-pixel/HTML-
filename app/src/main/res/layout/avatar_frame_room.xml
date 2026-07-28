@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_frame"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/avatar_frame"
+        android:layout_width="350mm"
+        android:layout_height="350mm"
+        android:layout_centerInParent="true"/>
+    <com.yy.yyeva.view.EvaAnimViewV3
+        android:id="@+id/ev_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/type_svga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        app:autoPlay="true"/>
+    <com.tencent.qgame.animplayer.AnimView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

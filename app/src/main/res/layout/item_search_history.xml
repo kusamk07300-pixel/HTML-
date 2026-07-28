@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/lin_history"
+    android:background="@drawable/bg_search_bj"
+    android:layout_width="wrap_content"
+    android:layout_height="68mm">
+    <TextView
+        android:textSize="14dp"
+        android:textColor="#ff333333"
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000"
+        android:layout_marginStart="20mm"/>
+    <ImageView
+        android:id="@+id/image_dele"
+        android:layout_width="32mm"
+        android:layout_height="32mm"
+        android:src="@mipmap/image_dele"
+        android:layout_marginStart="16mm"
+        android:layout_marginEnd="20mm"/>
+</LinearLayout>

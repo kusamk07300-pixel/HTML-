@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_toolbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20mm">
+            <EditText
+                android:textSize="14dp"
+                android:textColor="@color/base_text_color"
+                android:textColorHint="@color/second_text_color"
+                android:gravity="top|left"
+                android:id="@+id/et_content"
+                android:background="@null"
+                android:paddingLeft="@dimen/home_space"
+                android:paddingTop="20mm"
+                android:paddingRight="@dimen/home_space"
+                android:paddingBottom="20mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="260mm"
+                android:hint="@string/idea"
+                android:textCursorDrawable="@drawable/my_cursor"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_imgs"
+                android:paddingLeft="@dimen/home_space"
+                android:paddingRight="@dimen/home_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

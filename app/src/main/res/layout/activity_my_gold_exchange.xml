@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f9efff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="722mm"
+        android:src="@mipmap/iv_maz_exchangebj"
+        android:scaleType="fitXY"/>
+    <include
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/page_top"
+        layout="@layout/common_toolbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_top">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="24mm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="28mm"
+            android:paddingEnd="28mm">
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/base_text_color"
+                android:id="@+id/tv_my_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24mm"
+                android:text="@string/my_gold_coin"
+                android:fontFamily="sans-serif-medium"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

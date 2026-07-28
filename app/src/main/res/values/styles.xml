@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LaunchTheme" parent="@style/AppTheme"/>
+
+    <style name="ActivityTranslucent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CoreActivityTranslucent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ConversationTransparentPopActivityStyle" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="ContactTransparentPopActivityStyle" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="ChatTransparentPopActivityStyle" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="Base.Theme.NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28mm"
+    android:layout_marginEnd="28mm">
+    <TextView
+        android:textSize="12.6sp"
+        android:textColor="@color/text_tips_color"
+        android:layout_gravity="center"
+        android:id="@+id/message_top_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lin_item"
+        android:background="@drawable/bg_service_custom_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <com.tencent.qcloud.tuikit.tuichat.util.SelectableRoundedImageView
+            android:id="@+id/image_photo"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:sriv_left_top_corner_radius="20mm"
+            app:sriv_right_top_corner_radius="20mm"/>
+        <TextView
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ff333333"
+            android:id="@+id/msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""/>
+        <TextView
+            android:textSize="13dp"
+            android:textColor="#ff555555"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Click here far detail"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+</LinearLayout>

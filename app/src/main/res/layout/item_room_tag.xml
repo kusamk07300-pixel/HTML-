@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="14dp"
+    android:textColor="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/tv_tag"
+    android:background="@drawable/bg_login_gradint_input"
+    android:layout_width="112mm"
+    android:layout_height="56mm"/>

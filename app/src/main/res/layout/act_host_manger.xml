@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f9efff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_toolbar"/>
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/host_indicator"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100mm"
+        android:paddingStart="28mm"
+        android:paddingEnd="28mm"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/host_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingTop="47mm"
+        android:paddingBottom="47mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="103mm"
+        android:paddingEnd="103mm">
+        <TextView
+            android:textColor="@color/base_text_color"
+            android:gravity="center"
+            android:id="@+id/add_host"
+            android:background="@drawable/bg_add_host"
+            android:layout_width="match_parent"
+            android:layout_height="84mm"
+            android:text="@string/add_host"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>

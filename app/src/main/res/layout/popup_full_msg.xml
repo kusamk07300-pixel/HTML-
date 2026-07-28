@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="112mm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svga"
+            android:layout_width="match_parent"
+            android:layout_height="200mm"
+            android:scaleType="centerCrop"
+            app:autoPlay="true"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:background="@drawable/bg_full_screen_close"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/close_white"
+            android:layout_marginEnd="40dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>
