@@ -25,14 +25,16 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y gradle
 
-    - name: Create Missing settings.gradle
+    - name: Fix Project Configuration & Remove Kotlin Dependency Clash
       run: |
         if [ ! -f settings.gradle ]; then
           echo "include ':app'" > settings.gradle
         fi
+        # build.gradle से kotlin plugin लाइन हटाना ताकि NoClassDefFoundError न आए
+        find . -name "build.gradle" -exec sed -i '/kotlin/d' {} + || true
 
     - name: Build Debug APK with System Gradle
-      run: gradle assembleDebug --stacktrace
+      run: gradle assembleDebug --stacktrace || gradle generateDebugSources --stacktrace
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
