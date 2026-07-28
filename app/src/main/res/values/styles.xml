@@ -12,6 +12,24 @@
         <item name="core_header_start_color">@color/main_color</item>
         <item name="chat_pressed_bg_color">#E0E0E0</item>
         <item name="chat_input_area_bg">#F5F5F5</item>
+        <item name="chat_jump_recent_down_icon">@drawable/arrow_right</item>
+        <item name="chat_react_text_color">@color/main_color</item>
+        <item name="chat_reply_detail_icon">@drawable/arrow_right</item>
+        <item name="chat_self_custom_msg_link_color">@color/main_color</item>
+        <item name="chat_self_custom_msg_text_color">@color/white</item>
+        <item name="chat_self_msg_text_color">@color/white</item>
+        <item name="chat_self_reply_line_bg_color">@color/main_color</item>
+        <item name="chat_self_reply_quote_bg_color">#E8F5E9</item>
+        <item name="chat_self_reply_quote_text_color">@color/text_color_black</item>
+        <item name="chat_self_reply_text_color">@color/text_color_black</item>
+        <item name="chat_tip_text_color">@color/hint_color</item>
+        <item name="conversation_tab_selected">@drawable/bg_shape_rect_theme</item>
+        <item name="core_bg_color">@color/white</item>
+        <item name="core_default_user_icon">@drawable/bg_tag_user</item>
+        <item name="core_error_tip_color">@color/btn_negative</item>
+        <item name="core_selected_icon">@drawable/bg_shape_oval_theme</item>
+        <item name="core_title_bar_back_icon">@drawable/arrow_right</item>
+        <item name="core_title_bar_text_bg">@drawable/bg_shape_white</item>
     </style>
 
     <style name="LaunchTheme" parent="@style/AppTheme"/>
