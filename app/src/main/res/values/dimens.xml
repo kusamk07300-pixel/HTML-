@@ -3,6 +3,9 @@
     <dimen name="login_radius">22dp</dimen>
     <dimen name="chat_message_bg_stoke_width">1dp</dimen>
     <dimen name="switch_thumb_padding">2dp</dimen>
+    <dimen name="switch_thumb_height">27dp</dimen>
+    <dimen name="switch_thumb_width">27dp</dimen>
+    <dimen name="switch_thumb_radius">13.5dp</dimen>
     <dimen name="ayp_menu_dialog_container_margin">8dp</dimen>
     <dimen name="ayp_menu_item_padding">12dp</dimen>
     <dimen name="ayp_menu_item_text_size">14sp</dimen>
