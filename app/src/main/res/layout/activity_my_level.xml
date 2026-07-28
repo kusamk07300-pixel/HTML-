@@ -61,7 +61,7 @@
                         app:circleBgColor="@color/circle_bg_color"
                         app:circleEndColor="@color/circle_end_color"
                         app:circleIsGradient="true"
-                        app:circleProgressRadius="4"
+                        app:circleProgressRadius="4dp"
                         app:circleStartColor="@color/circle_start_color"/>
                     <TextView
                         android:textSize="14dp"
@@ -137,7 +137,7 @@
                         app:circleBgColor="@color/circle_bg_color"
                         app:circleEndColor="@color/circle_end_color"
                         app:circleIsGradient="true"
-                        app:circleProgressRadius="4"
+                        app:circleProgressRadius="4dp"
                         app:circleStartColor="@color/circle_start_color"/>
                     <TextView
                         android:textSize="14dp"

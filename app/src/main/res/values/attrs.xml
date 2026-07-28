@@ -49,4 +49,18 @@
     <attr name="duration_max" format="integer"/>
     <attr name="iconSrc" format="reference"/>
     <attr name="round_radius" format="dimension"/>
+    <attr name="lineColor" format="color"/>
+    <attr name="lineWidth" format="dimension"/>
+    <attr name="waveMode" format="string"/>
+    <attr name="lineSpace" format="dimension"/>
+    <attr name="corner_radius" format="dimension"/>
+    <attr name="image_radius" format="dimension"/>
+    <attr name="default_image" format="reference"/>
+    <attr name="titleTextSize" format="dimension"/>
+    <attr name="leftImage" format="reference"/>
+    <attr name="indexBarPressBackground" format="reference"/>
+    <attr name="indexBarTextSize" format="dimension"/>
+    <attr name="subject" format="string"/>
+    <attr name="paint_color" format="color"/>
+    <attr name="user_status_offline" format="reference"/>
 </resources>
