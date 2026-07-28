@@ -20,8 +20,14 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Force Gradle 7.5 Properties
+    - name: Create Missing Android Build Files
       run: |
+        # settings.gradle बनाना ताकि Gradle प्रोजेक्ट को पहचान सके
+        if [ ! -f settings.gradle ]; then
+          echo "include ':app'" > settings.gradle
+        fi
+        
+        # gradle-wrapper.properties बनाना (Gradle 7.5 के साथ)
         mkdir -p gradle/wrapper
         echo "distributionBase=GRADLE_USER_HOME" > gradle/wrapper/gradle-wrapper.properties
         echo "distributionPath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
@@ -30,7 +36,9 @@ jobs:
         echo "zipStorePath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: |
+        gradle wrapper --gradle-version 7.5 || true
+        chmod +x gradlew || true
 
     - name: Build Debug APK with Gradle
       run: ./gradlew assembleDebug --stacktrace
@@ -40,3 +48,4 @@ jobs:
       with:
         name: app-debug-apk
         path: app/build/outputs/apk/debug/app-debug.apk
+        
