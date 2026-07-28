@@ -46,5 +46,12 @@
     <color name="green">#4CAF50</color>
     <color name="minimalist_voice_normal">#2196F3</color>
     <color name="minimalist_voice_pressed">#1976D2</color>
+    <color name="ps_color_4e4d4e">#4E4D4E</color>
+    <color name="ps_color_light_grey">#F5F5F5</color>
+    <color name="ps_color_white">#FFFFFF</color>
+    <color name="ps_color_eb">#EBEBEB</color>
+    <color name="ps_color_transparent">#00000000</color>
+    <color name="ps_color_bfe85d">#BFE85D</color>
+    <color name="ps_color_a83">#A8A8A8</color>
 </resources>
 

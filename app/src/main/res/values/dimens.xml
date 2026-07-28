@@ -2,4 +2,5 @@
 <resources>
     <dimen name="login_radius">22dp</dimen>
     <dimen name="chat_message_bg_stoke_width">1dp</dimen>
+    <dimen name="switch_thumb_padding">2dp</dimen>
 </resources>
