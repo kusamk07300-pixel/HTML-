@@ -34,4 +34,9 @@
     <attr name="initX" format="dimension"/>
     <attr name="rotation" format="string"/>
     <attr name="xRand" format="dimension"/>
+    <attr name="name" format="string"/>
+    <attr name="canNav" format="boolean"/>
+    <attr name="isTop" format="boolean"/>
+    <attr name="isSwitch" format="boolean"/>
+    <attr name="group_add_icon" format="reference"/>
 </resources>
