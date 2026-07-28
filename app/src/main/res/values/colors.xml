@@ -38,5 +38,13 @@
     <color name="chat_bubble_self_color_serious">#95EC69</color>
     <color name="chat_message_bubble_bg_stoke_color">#D9D9D9</color>
     <color name="timcommon_transparent">#00000000</color>
+    <color name="item_split_color">#E0E0E0</color>
+    <color name="btn_negative">#F44336</color>
+    <color name="btn_negative_hover">#E57373</color>
+    <color name="group_btn_negative">#EF5350</color>
+    <color name="pk_color">#FF6B6B</color>
+    <color name="green">#4CAF50</color>
+    <color name="minimalist_voice_normal">#2196F3</color>
+    <color name="minimalist_voice_pressed">#1976D2</color>
 </resources>
 

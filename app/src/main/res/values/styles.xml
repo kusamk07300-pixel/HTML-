@@ -5,6 +5,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="core_primary_color">@color/main_color</item>
+        <item name="core_btn_disable_color">@color/grey_f6</item>
+        <item name="core_btn_normal_color">@color/main_color</item>
+        <item name="core_btn_pressed_color">@color/btn_positive_hover</item>
+        <item name="core_header_end_color">@color/main_color</item>
+        <item name="core_header_start_color">@color/main_color</item>
+        <item name="chat_pressed_bg_color">#E0E0E0</item>
+        <item name="chat_input_area_bg">#F5F5F5</item>
     </style>
 
     <style name="LaunchTheme" parent="@style/AppTheme"/>
