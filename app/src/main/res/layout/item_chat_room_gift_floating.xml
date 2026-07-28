@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="-6dp">
+    android:layout_marginLeft="-6dp" xmlns:app="http://schemas.android.com/apk/res-auto">
     <net.babycat.live.platform.widget.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/riv_gift_my_avatar"
         android:layout_width="56mm"

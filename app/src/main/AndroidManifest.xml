@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.babycat.live">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -573,11 +573,13 @@
 <!-- removed: PictureSelector, UCrop (not available from Maven Central) -->
 
         <activity
+            tools:replace="android:configChanges,android:windowSoftInputMode"
             android:theme="@style/ActivityTranslucent"
             android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
             android:configChanges="screenSize|orientation|keyboardHidden"
             android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
+            tools:replace="android:configChanges,android:windowSoftInputMode"
             android:theme="@style/ActivityTranslucent"
             android:name="com.blankj.utilcode.util.UtilsTransActivity"
             android:multiprocess="true"

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@mipmap/box_rules_bj"
     android:layout_width="match_parent"
-    android:layout_height="1000mm">
+    android:layout_height="1000mm" xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:id="@+id/iv_close"
         android:layout_width="64mm"
