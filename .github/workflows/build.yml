@@ -20,28 +20,19 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Create Missing Android Build Files
+    - name: Install System Gradle
       run: |
-        # settings.gradle बनाना ताकि Gradle प्रोजेक्ट को पहचान सके
+        sudo apt-get update
+        sudo apt-get install -y gradle
+
+    - name: Create Missing settings.gradle
+      run: |
         if [ ! -f settings.gradle ]; then
           echo "include ':app'" > settings.gradle
         fi
-        
-        # gradle-wrapper.properties बनाना (Gradle 7.5 के साथ)
-        mkdir -p gradle/wrapper
-        echo "distributionBase=GRADLE_USER_HOME" > gradle/wrapper/gradle-wrapper.properties
-        echo "distributionPath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
-        echo "distributionUrl=https\://services.gradle.org/distributions/gradle-7.5-bin.zip" >> gradle/wrapper/gradle-wrapper.properties
-        echo "zipStoreBase=GRADLE_USER_HOME" >> gradle/wrapper/gradle-wrapper.properties
-        echo "zipStorePath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
 
-    - name: Grant execute permission for gradlew
-      run: |
-        gradle wrapper --gradle-version 7.5 || true
-        chmod +x gradlew || true
-
-    - name: Build Debug APK with Gradle
-      run: ./gradlew assembleDebug --stacktrace
+    - name: Build Debug APK with System Gradle
+      run: gradle assembleDebug --stacktrace
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
