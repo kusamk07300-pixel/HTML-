@@ -26,4 +26,12 @@
     <attr name="core_selected_icon" format="reference"/>
     <attr name="core_title_bar_back_icon" format="reference"/>
     <attr name="core_title_bar_text_bg" format="reference"/>
+    <attr name="ccp_hideNameCode" format="boolean"/>
+    <attr name="ccp_textSize" format="dimension"/>
+    <attr name="ccp_defaultNameCode" format="string"/>
+    <attr name="ccp_enablePhoneAutoFormatter" format="boolean"/>
+    <attr name="ccp_textColor" format="color"/>
+    <attr name="initX" format="dimension"/>
+    <attr name="rotation" format="string"/>
+    <attr name="xRand" format="dimension"/>
 </resources>
