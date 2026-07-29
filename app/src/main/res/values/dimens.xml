@@ -171,4 +171,9 @@
     <dimen name="shifting_icon_badge_grid_height">28dp</dimen>
     <dimen name="shifting_icon_grid">24dp</dimen>
     <dimen name="shifting_label">12sp</dimen>
+    <dimen name="test_navigation_bar_label_padding">4dp</dimen>
+    <dimen name="test_navigation_bar_text_size">10sp</dimen>
+    <dimen name="test_navigation_bar_active_text_size">12sp</dimen>
+    <dimen name="material_text_view_test_line_height_override">20sp</dimen>
+    <dimen name="switch_mini_width">48dp</dimen>
 </resources>
