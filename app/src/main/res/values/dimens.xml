@@ -163,4 +163,12 @@
     <dimen name="fixed_label_active_to_inactive_ratio">0.85</dimen>
     <dimen name="material_clock_period_toggle_margin_left">16dp</dimen>
     <dimen name="material_timepicker_dialog_buttons_margin_top">24dp</dimen>
+    <dimen name="shifting_width_custom_padding">4dp</dimen>
+    <dimen name="shifting_height">56dp</dimen>
+    <dimen name="shifting_height_bottom_padding_active">4dp</dimen>
+    <dimen name="shifting_height_top_padding_inactive">8dp</dimen>
+    <dimen name="shifting_icon_badge_grid_width">28dp</dimen>
+    <dimen name="shifting_icon_badge_grid_height">28dp</dimen>
+    <dimen name="shifting_icon_grid">24dp</dimen>
+    <dimen name="shifting_label">12sp</dimen>
 </resources>

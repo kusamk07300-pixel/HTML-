@@ -122,6 +122,7 @@
     <color name="ps_color_transparent_e0db">#E0DBDB</color>
     <color name="ps_color_transparent_white">#00FFFFFF</color>
     <color name="rckit_color_primary">#008577</color>
+    <color name="rckit_color_effect_text_selector">#FFFFFF</color>
     <color name="read_dot_bg">#FF4444</color>
     <color name="reply_msg_abstract_text_color">#666666</color>
     <color name="room_bg">#2c0508</color>

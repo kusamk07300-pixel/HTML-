@@ -96,4 +96,11 @@
     <attr name="psTopNormal" format="boolean"/>
     <attr name="psCorners" format="dimension"/>
     <attr name="track" format="reference"/>
+    <attr name="line_color" format="color"/>
+    <attr name="borderSpacing" format="dimension"/>
+    <attr name="type" format="string"/>
+    <attr name="borderHeight" format="dimension"/>
+    <attr name="borderWidth" format="dimension"/>
+    <attr name="sriv_left_top_corner_radius" format="dimension"/>
+    <attr name="sriv_right_top_corner_radius" format="dimension"/>
 </resources>
