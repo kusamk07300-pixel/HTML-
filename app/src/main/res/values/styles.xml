@@ -140,4 +140,9 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="SwitchCompat" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/main_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
 </resources>

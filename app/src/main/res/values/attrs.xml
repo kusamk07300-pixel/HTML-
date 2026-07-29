@@ -64,4 +64,23 @@
     <attr name="paint_color" format="color"/>
     <attr name="user_status_offline" format="reference"/>
     <attr name="progress_border_enable" format="boolean"/>
+    <attr name="radius" format="dimension"/>
+    <attr name="sapcing" format="dimension"/>
+    <attr name="oneImageWidth" format="dimension"/>
+    <attr name="oneImageHeight" format="dimension"/>
+    <attr name="wave_color" format="color"/>
+    <attr name="init_radius" format="dimension"/>
+    <attr name="dsb_min" format="integer"/>
+    <attr name="dsb_progressColor" format="color"/>
+    <attr name="dsb_trackHeight" format="dimension"/>
+    <attr name="dsb_indicatorElevation" format="dimension"/>
+    <attr name="dsb_trackColor" format="color"/>
+    <attr name="dsb_rippleColor" format="color"/>
+    <attr name="dsb_indicatorColor" format="color"/>
+    <attr name="dsb_indicatorPopupEnabled" format="boolean"/>
+    <attr name="dsb_max" format="integer"/>
+    <attr name="dsb_scrubberHeight" format="dimension"/>
+    <attr name="dsb_thumbSize" format="dimension"/>
+    <attr name="dsb_trackBaseHeight" format="dimension"/>
+    <attr name="dsb_value" format="integer"/>
 </resources>
