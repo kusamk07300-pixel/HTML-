@@ -145,4 +145,10 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
+    <style name="myRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:maxHeight">12dp</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_opreview</item>
+    </style>
+
 </resources>

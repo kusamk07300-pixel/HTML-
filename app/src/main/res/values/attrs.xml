@@ -83,4 +83,17 @@
     <attr name="dsb_thumbSize" format="dimension"/>
     <attr name="dsb_trackBaseHeight" format="dimension"/>
     <attr name="dsb_value" format="integer"/>
+    <attr name="dm_h_space" format="dimension"/>
+    <attr name="dm_direction" format="string"/>
+    <attr name="dm_span" format="dimension"/>
+    <attr name="dm_v_space" format="dimension"/>
+    <attr name="dm_span_time" format="integer"/>
+    <attr name="gift_item_layout" format="reference"/>
+    <attr name="max_gift" format="integer"/>
+    <attr name="progress_gif" format="reference"/>
+    <attr name="custom_width" format="dimension"/>
+    <attr name="clickToClose" format="boolean"/>
+    <attr name="psTopNormal" format="boolean"/>
+    <attr name="psCorners" format="dimension"/>
+    <attr name="track" format="reference"/>
 </resources>
